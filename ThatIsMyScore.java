@@ -36,22 +36,29 @@ class ThatIsMyScore
 		int t = sc.nextInt();
 		while (t-- > 0)
 		{
-		    int n = sc.nextInt();   //submissions
+		    int n = sc.nextInt();   //n = no. of problems submitted or solved
 		    int[] questions = new int[11];
 		    for (int i=0;i<11;i++)
 		        questions[i] = 0;
+			//initially we set all the scores to 0
 		        
 		    for(int i=1;i<=n;i++)
 		    {
 		        int p = sc.nextInt();
 		        int s = sc.nextInt();
+			//everytime before inputting the scores we check if the new score is more than the existing one
+			//if true, then we update the existing score with the new maximum, else if false, we do nothing.
 		        if (s > questions[p-1])
 		            questions[p-1] = s;
+			    //we update the score in the (p-1)th position of the questions array.
+			    //the scores we did not obtain remain 0 .
 		    }
 		    
 		    int sum = 0;
 		    for (int i=0;i<8;i++)
 		        sum += questions[i];
+			//after we are done getting all the scores, we add them all.
+			//but we add the scores only till problem 8 because the rest are unscorable so we ignore them. 
 		        
 		    System.out.println(sum);
 		}
