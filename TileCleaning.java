@@ -1,4 +1,6 @@
 /*
+THIS QUESTION CAME IN IICC CODING NINJAS CONTEST
+
 You are given N number of tiles and you are initially at kth position, you can only move to the next tile
 (if you are not on the Nth tile) or to the previous one (if your not on the 1st tile). Your goal is to clean all 
 the tiles. The tile you are initially at is already cleaned since you are standing on it. Every time you move to 
@@ -22,6 +24,9 @@ Sample Output:
 4
 3
 6
+
+Note:-
+It's upto you how you want to write the main function of the code for input and output, but this is the core working function. 
 */
 
 public class Solution {
