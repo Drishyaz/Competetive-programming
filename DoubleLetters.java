@@ -1,5 +1,7 @@
 /*
 Print the number of the letters which have frequency exactly twice in the string.
+Do the program without using any in-built functions.
+
 Input: pool; Output: 1; Explaination: 'o' has frequency exactly 2, so no. of letters with that frequency = 1;
 Input: malayalam; Output: 2
 Input: statesman; Output: 3
